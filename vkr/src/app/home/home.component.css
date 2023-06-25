@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoimg {
+  margin-left: 90px;
+}
+
+.text {
+  text-align: center;
+}
+
+.btn {
+  border-radius: 3%;
+}
+
+.imgfeedback {
+
+  transition: 1s;
+  cursor: pointer;
+}
+
+.imgfeedback:hover {
+  transform: scale(1.2);
+
+}
+
+li {
+  list-style: none;
+}
+
+@media screen and (max-width: 540px) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,39 @@
+<div class="mt-4 all">
+  <h4 class="consult">Запись на консультацию</h4>
+  <div class="mt-3 user-info">
+    <div class="mt-3">
+      <span class="mx-3"></span>
+      <input placeholder=" Имя" type="text" class="mt-3" class="mt-3" pInputText formControlName="name" />
+    </div>
+
+    <div class="mt-3">
+      <span class="mx-3"></span>
+      <input placeholder=" Фамилия" type="text" class="mt-3" class="mt-3" pInputText formControlName="surname"
+        [(ngModel)]="surname" />
+    </div>
+
+    <div class="mt-3">
+      <span class="mx-3"></span>
+      <input placeholder=" Email" type="email" class="mt-3" class="mt-3" pInputText formControlName="email"
+        [(ngModel)]="email" />
+    </div>
+
+    <div class="mt-3">
+      <span class="mx-3"></span>
+      <input placeholder=" Телефон" type="number" class="mt-3" pInputText formControlName="phone" [(ngModel)]="phone" />
+    </div>
+
+    <div class="mt-3">
+      <span class="mx-3"></span>
+      <input placeholder=" Сообщение" type="text" class="mt-3" pInputText formControlName="message"
+        [(ngModel)]="message" />
+    </div>
+
+    <div class="mt-4">
+      <button class="btn-success btn" type="submit" (click)="send()"
+        [disabled]="!name||!phone||!message||!surname||!email">Записаться</button>
+    </div>
+
+
+  </div>
+</div>
